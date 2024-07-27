@@ -50,7 +50,7 @@ const Grid = () => {
               width="500"
               height="500"
               alt="image"
-              onClick={() => router.push("/dashboard")}
+              onClick={() => router.push(`/${index}`)}
             />
           </motion.div>
         ))}
