@@ -1,8 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Grid = () => {
+  const router = useRouter();
+
   const images = [
     "/images/1.jpg",
     "/images/2.jpg",
@@ -11,6 +16,7 @@ const Grid = () => {
     "/images/5.jpg",
     "/images/6.jpg",
   ];
+
   return (
     <motion.div
       className="max-w-[1024px] mx-auto"
@@ -44,6 +50,7 @@ const Grid = () => {
               width="500"
               height="500"
               alt="image"
+              onClick={() => router.push("/dashboard")}
             />
           </motion.div>
         ))}

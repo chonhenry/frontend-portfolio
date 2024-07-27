@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export function DarkModeToggle() {
+export default function DarkModeToggle() {
   const { setTheme } = useTheme();
 
   return (
@@ -20,7 +20,7 @@ export function DarkModeToggle() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
-        duration: 0.5,
+        duration: 0.7,
         ease: "easeInOut",
       }}
     >
